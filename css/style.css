@@ -106,6 +106,8 @@ section {
     list-style: none;
     display: flex;
     font-size: 19px;
+    max-width: 100%;
+    height: auto;
   }
   
   .nav__links li {
