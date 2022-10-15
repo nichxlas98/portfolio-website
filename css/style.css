@@ -80,127 +80,6 @@ section {
     transform: translate(-30%, 30%);
     z-index: -1;
 }
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px 10%;
-    background-color: #202731;
-  }
-  
-  .logo {
-    cursor: pointer;
-    order: 3;
-    margin-left: auto;
-  }
-  
-  nav {
-    order: 1;
-  }
-  
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #edf0f1;
-    text-decoration: none;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-    font-size: 19px;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .nav__links li {
-    padding: 0px 25px;
-  }
-  
-  .nav__links li:nth-child(1) {
-    padding: 0 20px 0 0;
-  }
-  
-  .nav__links li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: #0088a9;
-  }
-  
-  .cta {
-    order: 2;
-    margin-left: 500px;
-    padding: 9px 35px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  }
-  
-  /* Mobile Nav */
-  
-  .menu {
-    display: none;
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #24252a;
-    overflow-x: hidden;
-    transition: all 0.5s ease 0s;
-  }
-  
-  .overlay--active {
-    width: 100%;
-  }
-  
-  .overlay__content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .overlay a {
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #0088a9;
-  }
-  .overlay .close {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: #edf0f1;
-  }
   
   @media screen and (max-height: 450px) {
     .overlay a {
@@ -276,4 +155,67 @@ section {
 video {
   max-width: 100%;
   height: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #6b04cc;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
