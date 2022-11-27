@@ -43,6 +43,10 @@ section {
     background: #0f0f10;
 }
 
+.white {
+    background: white;
+}
+
 .curve {
     position: absolute;
     height: 225px;
